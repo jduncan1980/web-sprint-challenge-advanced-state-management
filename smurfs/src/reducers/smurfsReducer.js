@@ -33,7 +33,7 @@ export const smurfsReducer = (state = initialState, action) => {
 				...state,
 				isLoading: false,
 				error: '',
-				smurfs: [...state.smurfs, ...action.payload],
+				smurfs: [...action.payload],
 			};
 		case GET_SMURFS_ERROR:
 			return {

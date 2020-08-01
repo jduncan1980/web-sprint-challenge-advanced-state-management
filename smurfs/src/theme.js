@@ -61,7 +61,7 @@ const dark = {
 			border: '4px solid #97b6c3',
 			padding: '20px',
 			margin: '30px',
-			width: ['90%', null, '40%', null, '29%'],
+			width: ['90%', null],
 		},
 	},
 	forms: {
