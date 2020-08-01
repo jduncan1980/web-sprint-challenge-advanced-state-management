@@ -2,13 +2,12 @@ const dark = {
 	breakpoints: ['600px', '900px', '1200px', '1800px'],
 	colors: {
 		text: '#fff',
-		background: '#1b0b30',
-		primary: '#3cf',
-		secondary: '#e0f',
+		background: '#3cf',
+		primary: '#db9913',
+		secondary: '#97b6c3',
 		muted: '#191919',
 		highlight: '#29112c',
 		gray: '#999',
-		purple: '#c0f',
 	},
 	fonts: {
 		body:
@@ -16,7 +15,7 @@ const dark = {
 		heading: 'inherit',
 		monospace: 'Menlo, monospace',
 	},
-	fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
+	fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72, 84],
 	fontWeights: {
 		body: 400,
 		heading: 700,
@@ -58,8 +57,8 @@ const dark = {
 		primary: {
 			display: 'flex',
 			flexDirection: 'column',
-			backgroundColor: 'background',
-			border: '4px solid #e0f',
+			backgroundColor: 'muted',
+			border: '4px solid #97b6c3',
 			padding: '20px',
 			margin: '30px',
 			width: ['90%', null, '40%', null, '29%'],

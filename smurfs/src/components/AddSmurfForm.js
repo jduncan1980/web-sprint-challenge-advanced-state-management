@@ -24,8 +24,19 @@ function AddSmurfForm(props) {
 	};
 
 	return (
-		<Flex as='form' onSubmit={handleSubmit} sx={{ flexDirection: 'column' }}>
-			<Heading as='h1' sx={{ marginBottom: '30px' }}>
+		<Flex
+			as='form'
+			onSubmit={handleSubmit}
+			sx={{
+				flexDirection: 'column',
+				background: '#083242',
+				padding: '30px',
+				margin: '15px',
+				borderRadius: '15px',
+				width: ['90%', null, null, '50%'],
+			}}
+		>
+			<Heading as='h2' sx={{ marginY: '30px', textAlign: 'center' }}>
 				Add A New Smurf!
 			</Heading>
 			<Field
