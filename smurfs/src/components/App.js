@@ -1,16 +1,27 @@
-import React, { Component } from "react";
-import "./App.css";
+import React, { Component } from 'react';
+import './App.css';
+import { Container, Heading } from 'theme-ui';
+import SmurfCardContainer from './SmurfCardContainer';
+import AddSmurfForm from './AddSmurfForm';
+import { Route } from 'react-router-dom';
+import Smurf from './Smurf';
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <h1>SMURFS! 2.0 W/ Redux</h1>
-        <div>Welcome to your state management version of Smurfs!</div>
-        <div>Start inside of your `src/index.js` file!</div>
-        <div>Have fun!</div>
-      </div>
-    );
-  }
+	render() {
+		return (
+			<Container>
+				<Route exact path='/'>
+					<Heading as='h1' sx={{ fontSize: [5, 6, 7, 8, 9], marginY: '40px' }}>
+						My Favorite Smurfs
+					</Heading>
+					<SmurfCardContainer />
+					<AddSmurfForm />
+				</Route>
+				<Route path='/:id'>
+					<Smurf />
+				</Route>
+			</Container>
+		);
+	}
 }
 
 export default App;
